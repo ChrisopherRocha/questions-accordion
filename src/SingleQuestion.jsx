@@ -1,10 +1,15 @@
-import React from 'react'
+import { useState } from 'react'
 
-function SingleQuestion() {
+function SingleQuestion({ title, info }) {
+    const [showInfo, setShowInfo] = useState(false)
+
   return (
-    <div>
-      single question
-    </div>
+    <article className='question'>
+        <header>
+            <h5>{title}</h5>
+        </header>
+        <p>{info}</p>
+    </article>
   )
 }
 

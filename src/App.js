@@ -7,7 +7,6 @@ function App() {
   const [questions, setQuestions] = useState(data)
   return (
     <main className="App">
-      <h1>Hello Questions</h1>
       <Questions questions={questions} />
     </main>
   );
